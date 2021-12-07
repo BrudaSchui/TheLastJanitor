@@ -1,0 +1,5 @@
+- Unterteilt in Räume
+	- Klassnzimma
+	- Strossa ([[Ausdauer]]-Shop)
+	- PC-Raum
+	- Durch an Gong verbundn, wo Spindts und [[NPCs]] fian Hausschuach-Kontrolle [[Tasks]] san

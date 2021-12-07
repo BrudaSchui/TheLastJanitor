@@ -1,0 +1,6 @@
+- In Form von Lewahittn
+	- Energie = Ausdauer, koa Energie = longsom geh/Tasks dauern länger
+	- hoit donn bissl länger on, 1-2min?
+	- Lewahittn
+		- Konsum füllt Energie auf
+		- Für kleines Geld beim Strossa zu erkaufen

@@ -1,0 +1,1 @@
+Da Heimo is da oanzige Hausmoasta, der ned im Home-Office is und hod deswegen an recht an stressign Oabeitstog. Er muass im Top-Down Style auf ana [[Map]] umadum renna und olle möglichen [[Tasks]] erfüllen, wofia a natiale belohnt wird, und konn probiern, an Highscore zu knackn. Dabei deaf a sei [[Ausdauer]] ned aus de Augn valian.
