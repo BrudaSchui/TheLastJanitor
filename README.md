@@ -1,6 +1,8 @@
 # TheLastJanitor
 
-is a small game where you run around a school as the last janitor (because all of your janitor-colleagues are working from home) and you have to solve different tasks to collect points that count towards a high score. Helping you with solving the tasks quicker are so-called "Lewahittn", which can be bought at the "Strossa" and provide you with additional movement speed
+> aka Heimo Simulator
+
+is a small game where you run around a school as the last janitor (because all of your janitor-colleagues are working from home) and you have to solve different tasks to collect points that count towards a high score. Helping you with solving the tasks quicker are so-called "Lewahittn", which can be bought at the "Strossa" and provide you with additional movement speed.
 
 ## Map
 
@@ -25,4 +27,4 @@ These tasks have a time limit within which they must be completed, otherwise it 
 
 ## Lewahittn
 
-Lewahittn provide you with additional movement speed. The consumption of one of these power-ups fills a bar on your screen to tell you how long the boost will last, this duration increases over time. You can buy these nifty items at the Strossa for the small price of little money dollars.
+Lewahittn provide you with additional movement speed. The consumption of one of these power-ups fills a bar on your screen to tell you how long the boost will last, this duration increases over time. You can buy these nifty items at the Strossa for the small price of very little money dollars.
