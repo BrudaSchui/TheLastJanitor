@@ -3,7 +3,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 	private float speed = 2;
-	private float taskEnterTime;
 
 	void Update()
 	{
