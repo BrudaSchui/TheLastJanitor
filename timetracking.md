@@ -7,3 +7,5 @@
 | 21.12. | 2.5h | player, repo restrukturieren, classroom      |
 | 11.01. | 2h   | Unity Projekt aufgsetzt                      |
 | 13.01. | 1.5h | Tilemap                                      |
+| 18.01. | 2h   | Tilemap refined, umadum do mid Spind Tiles ohne Ergebnis |
+| 25.01. | 2h   | Tilemap um Spinds erweitert, neiche Spind Sprites de 32px broad san, Cinemachine Camera einbaut, filter mode bei de Sprites gändert damits crisp is, Map breada gmocht |
