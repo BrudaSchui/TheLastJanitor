@@ -8,4 +8,5 @@
 | 11.01. | 2    | Unity Projekt aufgsetzt                                                                                        |
 | 13.01. | 1.5  | Tilemap                                                                                                        |
 | 18.01. | 2    | Tilemap refined, umadum do mid Spind Tiles ohne Ergebnis                                                       |
-| 25.01. | 2    | Tilemap um Spinds erweitert, neiche Spind Sprites, Cinemachine Camera einbaut, Sprites optimiert fia crispness | 
+| 25.01. | 2    | Tilemap um Spinds erweitert, neiche Spind Sprites, Cinemachine Camera einbaut, Sprites optimiert fia crispness |
+| 26.01. | 1.25 | Player Idle Animation, Spinds wieda moi neich designed                                                         | 
