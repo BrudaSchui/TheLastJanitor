@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 	private float _speed = 2;
 	private float _stamina = 1;
 	private Animator _animator;
-	public Text _staminaText;
+	public Text staminaText;
 
 	void Start()
 	{
@@ -23,8 +23,10 @@ public class Player : MonoBehaviour
 
 		GetComponent<Rigidbody2D>().velocity = direction * _speed * _stamina;
 
-		_stamina -= 1 / 100;
-		_staminaText.text = $"Stamina: {_stamina}";
+		//TODO(jonik): Properly implement this fuckery. Updating the value and text every update cycle is probably not a best practice.
+		_stamina -= (float) 1.0 / 10000;
+		_stamina = Mathf.Clamp(_stamina, 0, 1);
+		staminaText.text = $"Stamina: {_stamina}";
 	}
 
 	void Eat()
