@@ -1,18 +1,19 @@
+using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
 	private readonly float _speed = 2;
 	private float _stamina = 1;
 	private readonly float _staminaLoss = 1f / 100;
+	public Progressbar staminaBar;
+	
 	private Animator _animator;
-	public Text staminaText;
 
 	private void Start()
 	{
 		_animator = GetComponent<Animator>();
-		InvokeRepeating(nameof(DecreaseStamina), .1f, .5f);
+		staminaBar = FindObjectOfType<Progressbar>();
 	}
 
 	private void Update()
@@ -24,16 +25,14 @@ public class Player : MonoBehaviour
 		_animator.SetFloat("Move X", x);
 
 		GetComponent<Rigidbody2D>().velocity = direction * _speed * _stamina;
-
-		//TODO(jonik): Properly implement this fuckery. Updating the value and text every update cycle is probably not a best practice.
+		StartCoroutine(DecreaseStamina());
 	}
-
-	private void DecreaseStamina()
+	
+	private IEnumerator DecreaseStamina()
 	{
-		_stamina -= _staminaLoss;
-		_stamina = Mathf.Clamp(_stamina, 0, 1);
-		staminaText.text = $"Stamina: {_stamina}";
-		Debug.Log($"Stamina: {_stamina}");
+		_stamina = Mathf.Clamp(_stamina - _staminaLoss * Time.deltaTime, 0.5f, 1f);
+		staminaBar.value = _stamina;
+		yield return new WaitForSeconds(1f);
 	}
 
 	private void Eat()
