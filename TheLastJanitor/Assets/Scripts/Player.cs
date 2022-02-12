@@ -3,17 +3,19 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-	private float _speed = 2;
+	private readonly float _speed = 2;
 	private float _stamina = 1;
+	private readonly float _staminaLoss = 1f / 100;
 	private Animator _animator;
 	public Text staminaText;
 
-	void Start()
+	private void Start()
 	{
 		_animator = GetComponent<Animator>();
+		InvokeRepeating(nameof(DecreaseStamina), .1f, .5f);
 	}
 
-	void Update()
+	private void Update()
 	{
 		float x = Input.GetAxisRaw("Horizontal");
 		float y = Input.GetAxisRaw("Vertical");
@@ -24,12 +26,17 @@ public class Player : MonoBehaviour
 		GetComponent<Rigidbody2D>().velocity = direction * _speed * _stamina;
 
 		//TODO(jonik): Properly implement this fuckery. Updating the value and text every update cycle is probably not a best practice.
-		_stamina -= (float) 1.0 / 10000;
-		_stamina = Mathf.Clamp(_stamina, 0, 1);
-		staminaText.text = $"Stamina: {_stamina}";
 	}
 
-	void Eat()
+	private void DecreaseStamina()
+	{
+		_stamina -= _staminaLoss;
+		_stamina = Mathf.Clamp(_stamina, 0, 1);
+		staminaText.text = $"Stamina: {_stamina}";
+		Debug.Log($"Stamina: {_stamina}");
+	}
+
+	private void Eat()
 	{
 		_stamina = 1;
 	}
